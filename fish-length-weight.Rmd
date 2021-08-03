@@ -50,7 +50,7 @@ ggplot(data = barracuda_df, aes(x = fish_length, y = barracuda_weight)) +
   labs(x = "fish length (cm)",
        y = "weight (grams)",
        title = "Barracuda Weight",
-       subtitle = "barracuda weight as a function of fish length")
+       subtitle = "barracuda weight as a function of fish lengthz")
 
 ```
  
