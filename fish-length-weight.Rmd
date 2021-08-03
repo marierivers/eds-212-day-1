@@ -54,6 +54,8 @@ ggplot(data = barracuda_df, aes(x = fish_length, y = barracuda_weight)) +
 
 ```
 #### to use git hub, in the console, type usethis::use_git(), then answer yes, they type usethis::use_github(). There might be a more efficient way to add git with a library or something like that.
+
+#### to upload to github, knit, select the two files, commit, add a comment, commit, pull, close, push
  
  
  
