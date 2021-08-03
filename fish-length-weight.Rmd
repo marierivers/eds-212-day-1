@@ -1,0 +1,52 @@
+---
+title: "fish-length-weight"
+author: "Marie Rivers"
+date: "8/2/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+```
+### Fish Length Weight
+#### Created the R markdown for the last session of day 1
+*I've learned a lot today*
+
+**the website is very helpful**
+
+* now I
+ + I made a 
+ + bullet list
+ 
+ Here's a picture of Lyra
+ 
+ ! [Alt text] (/Users/marierivers/Pictures/Lyra/2019/20191021_174201.jpq)
+ 
+```{r}
+
+weight_grams <- function(a, b, length_cm) {
+  weight_grams = (a * (length_cm^b))
+}
+milkfish <- (weight_grams(a = 0.0905, b = 2.52, length_cm = 60))
+print(milkfish)
+
+trevally <- weight_grams(a = 0.0353, b = 3.05, length_cm = 60)
+print(trevally)
+
+barracuda <- weight_grams(a = 0.0181, b = 3.27, length_cm = 60)
+print(barracuda)
+
+fish_length <- seq(from = 0, to = 200, by = 1)
+
+barracuda_weight <- weight_grams(a = 0.0181, b = 3.27, length_cm = fish_length)
+
+barracuda_df <- data.frame(fish_length, barracuda_weight)
+barracuda_df
+
+ggplot(data = barracuda_df, aes(x = fish_length, y = barracuda_weight)) +
+  geom_point()
+```
+ 
+ 
