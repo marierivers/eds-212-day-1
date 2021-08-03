@@ -53,6 +53,7 @@ ggplot(data = barracuda_df, aes(x = fish_length, y = barracuda_weight)) +
        subtitle = "barracuda weight as a function of fish length")
 
 ```
+#### to use git hub, in the console, type usethis::use_git(), then answer yes, they type usethis::use_github(). There might be a more efficient way to add git with a library or something like that.
  
  
  
